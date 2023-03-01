@@ -28,11 +28,11 @@ export default function Home({ data }) {
       </Head>
       <main className={styles.main}>
    
-     {/*   <ul>
+     {   <ul>
           {data && data.map(item => (
             <li key={ item.id}>{ item.title}</li>
           ))}
-        </ul> */
+        </ul>
 }
         <form onSubmit={saveMovie}>
           <input type="text" placeholder='title' name='title' onChange={e => setFormData({...formData,title:e.target.value})}/>
