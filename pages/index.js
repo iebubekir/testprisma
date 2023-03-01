@@ -29,7 +29,7 @@ export default function Home({ data }) {
       <main className={styles.main}>
    
         <ul>
-          {data.map(item => (
+          {data ?? data.map(item => (
             <li key={ item.id}>{ item.title}</li>
           ))}
         </ul>
